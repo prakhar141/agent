@@ -156,7 +156,7 @@ except ImportError:
 # CONFIGURATION
 # ─────────────────────────────────────────────────────
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "qwen3-coder:480b-cloud"
+MODEL_NAME = "deepseek-v3.1:671b-cloud"
 AGENT_LOG = "agent_log.jsonl"
 WORKSPACE = "agent_workspace"
 MEMORY_FILE = "agent_memory.json"
