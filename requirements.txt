@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────
+# Universal Autonomous OS Agent v4.0
+# requirements.txt
+#
+# Install with:  pip install -r requirements.txt
+#
+# Core dependencies are required.
+# Optional dependencies enable additional
+# capabilities but the agent degrades
+# gracefully if they are missing.
+# ─────────────────────────────────────────────
+
+
+# ── Core (always required) ──────────────────
+requests>=2.28.0          # Ollama API calls, HTTP actions, web downloads
+beautifulsoup4>=4.12.0    # HTML parsing for scrape_webpage action
+
+
+# ── GUI Automation ───────────────────────────
+# Required for mouse, keyboard, and screen actions
+pyautogui>=0.9.54         # Mouse/keyboard control, screenshots
+Pillow>=10.0.0            # Screenshot capture and image operations
+
+
+# ── Windows UI Automation ────────────────────
+# Required for UI tree perception (Windows only)
+uiautomation>=2.0.18      # Windows Accessibility API tree walker
+pywin32>=306              # win32gui / win32con / win32api / win32process
+
+
+# ── OCR ──────────────────────────────────────
+# Requires Tesseract OCR binary installed separately:
+# https://github.com/UB-Mannheim/tesseract/wiki
+pytesseract>=0.3.10       # Python wrapper for Tesseract OCR
+
+
+# ── Clipboard ────────────────────────────────
+pyperclip>=1.8.2          # Clipboard read/write (also used for fast text typing)
+
+
+# ── System Monitoring ────────────────────────
+psutil>=5.9.0             # Process list, CPU/RAM/disk stats
+
+
+# ── Input Hooks (optional) ───────────────────
+# Enables global hotkey and mouse listeners
+keyboard>=0.13.5          # Global keyboard hook
+mouse>=0.7.1              # Global mouse hook
